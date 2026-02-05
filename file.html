@@ -1,1 +1,694 @@
 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>testing me - Articles</title>
+		<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" />
+
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />	
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" />		
+		
+		<link rel="stylesheet" href="home-styles.css" />
+		<link rel="stylesheet" href="navbar.css" />
+		
+			<link rel="stylesheet" href="navbar-authenticated.css" />
+		
+
+		<link rel="stylesheet" href="articleheader.css" />
+		
+		<style>
+			body {
+				background-color: #e9e5df;
+			}
+
+			.stars i.activeStar {
+				color: deeppink;
+			}
+		</style>
+    </head>
+    <body>
+		
+		
+			<nav class="navbar navbar-expand-lg bg-white p-0">
+    <div class="container-fluid px-2rem" id="small-screen1">
+        <div class="header_left">
+            <div class="navbar-brand d-flex align-items-center specific-logo-margin py-1 p-lg-0">
+                <a class="navbar-brand p-0" href="#">
+                    <img
+                        id="main-logo"
+                        src="logo.svg"
+                        alt="testingme Logo"
+                        class="navbar-logo" />
+                </a>
+            
+                <a href="/" class="brand-text">testing<span class="gradient-text">me</span></a>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pt-1" id="navbarSupportedContent">
+            <ul class="nav-first-div navbar-nav justify-content-end align-items-center d-flex mobile-first flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="border-bottom: 2px solid" href="/">
+                        <div class="nav_link">
+                            <div class="nav_icon">
+                            <i class="fa-solid fa-house" style="font-size: 1.3rem!important; "></i>
+                            </div>
+                            <div class="nav_text">Home</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li id="browse-box" class="nav-item position-relative mega-menu-item">
+                    <a class="nav-link" href="#">
+                        <div class="nav_link jobs">
+                            <div class="nav_icon">
+                            <!-- <i class="fa-regular fa-compass" style="font-size: 1.3rem !important;margin-left: -0.2rem;"></i> -->
+                            <i class="fa-solid fa-magnifying-glass"
+                                style="font-size: 1.3rem !important;margin-left: -0.2rem;"></i>
+                            </div>
+                            <div class="nav_text">Browse</div>
+                        </div>
+                    </a>
+                    <div class="mega-menu mega-browse-pro">
+    <div class="browse-pro-container">
+        <div class="browse-nav-section">
+            <div class="nav-header">
+                <h6 class="menu-heading">Discover Content</h6>
+                <a href="/all-categories" class="view-all"
+                    >View All <i class="fas fa-arrow-right"></i
+                    ></a>
+            </div>
+            <div class="nav-grid-3col">
+                <a href="/search/articles" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=100&amp;h=100&amp;fit=crop"
+                        alt="Articles"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Articles</span>
+                        <span class="card-desc">Deep dives &amp; news</span>
+                    </div>
+                </a>
+                <a href="/blogs" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Blogs"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Blogs</span>
+                        <span class="card-desc">Personal journals</span>
+                    </div>
+                </a>
+                <a href="/stories" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?w=100&amp;h=100&amp;fit=crop"
+                        alt="Stories"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Stories</span>
+                        <span class="card-desc">Fiction series</span>
+                    </div>
+                </a>
+                <a href="/tutorials" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=100&amp;h=100&amp;fit=crop"
+                        alt="Tutorials"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Tutorials</span>
+                        <span class="card-desc">Step-by-step guides</span>
+                    </div>
+                </a>
+                <a href="/interviews" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?w=100&amp;h=100&amp;fit=crop"
+                        alt="Interviews"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Interviews</span>
+                        <span class="card-desc">Expert conversations</span>
+                    </div>
+                </a>
+                <a href="/reviews" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=100&amp;h=100&amp;fit=crop"
+                        alt="Reviews"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Reviews</span>
+                        <span class="card-desc">Product analysis</span>
+                    </div>
+                </a>
+                <a href="/podcasts" class="pro-card">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1683140721527-262985d7c8ef?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9kY2FzdHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Podcasts"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Podcasts</span>
+                        <span class="card-desc">Audio episodes</span>
+                    </div>
+                </a>
+                <a href="/news" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=100&amp;h=100&amp;fit=crop"
+                        alt="News"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">News</span>
+                        <span class="card-desc">Latest updates</span>
+                    </div>
+                </a>
+                <a href="/events" class="pro-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=100&amp;h=100&amp;fit=crop"
+                        alt="Events"
+                        class="card-thumb"
+                        />
+                    <div class="card-info">
+                        <span class="card-title">Events</span>
+                        <span class="card-desc">Meetups &amp; webinars</span>
+                    </div>
+                </a>
+            </div>
+            <div class="browse-tags-footer">
+                <span class="tags-label"
+                    ><i class="fas fa-fire-alt"></i> Trending:</span
+                    >
+                <div class="tags-list">
+                    <a href="/tag/ai">#ArtificialIntelligence</a>
+                    <a href="/tag/design">#DesignSystem</a>
+                    <a href="/tag/writing">#WritingTips</a>
+                    <a href="/tag/remote">#RemoteWork</a>
+                </div>
+            </div>
+        </div>
+        <div class="browse-feature-section">
+            <h6 class="menu-heading">Editor's Pick</h6>
+            <a href="/featured-article" class="feature-preview-card">
+                <div class="feature-image-wrapper">
+                    <img
+                        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&amp;q=80"
+                        alt="Featured"
+                        class="feature-main-img"
+                        />
+                    <span class="f-tag">Must Read</span>
+                </div>
+                <div class="feature-text">
+                    <h4>The Art of Minimalist Writing</h4>
+                    <p>
+                        How to say more with less and capture your reader's
+                        attention instantly.
+                    </p>
+                    <span class="read-link"
+                        >Read Article <i class="fas fa-arrow-right"></i
+                        ></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+                </li>
+                
+                <li id="manage-box" class="nav-item position-relative mega-menu-item">
+                    <a class="nav-link" href="#">
+                        <div class="nav_link jobs">
+                            <div class="nav_icon">
+                                <i class="fa-solid fa-gears" style="font-size: 1.3rem !important"></i>
+                            </div>
+                            <div class="nav_text">Manage</div>
+                        </div>
+                    </a>
+                    <div class="mega-menu mega-manage-light">
+    <div class="manage-light-container">
+        <div class="manage-column">
+            <h6 class="column-header">Creation Suite</h6>
+            <div class="menu-group">
+                <a href="/post-new" class="menu-link-item">
+                    <div class="icon-box blue">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Write New Post</span>
+                        <span class="link-desc">Start a blog, article, or story</span>
+                    </div>
+                </a>
+                <a href="/drafts" class="menu-link-item">
+                    <div class="icon-box gray">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Drafts</span>
+                        <span class="link-desc">Continue unfinished work</span>
+                    </div>
+                </a>
+                <a href="/media" class="menu-link-item">
+                    <div class="icon-box purple">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Media Library</span>
+                        <span class="link-desc">Manage images &amp; uploads</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="manage-column">
+            <h6 class="column-header">Growth &amp; Stats</h6>
+            <div class="menu-group">
+                <a href="/stats" class="menu-link-item">
+                    <div class="icon-box green">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Traffic Overview</span>
+                        <span class="link-desc">Real-time pageviews &amp; trends</span>
+                    </div>
+                </a>
+                <a href="/seo-tools" class="menu-link-item">
+                    <div class="icon-box orange">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">SEO Insights</span>
+                        <span class="link-desc">Keywords &amp; search ranking</span>
+                    </div>
+                </a>
+                <a href="/audience" class="menu-link-item">
+                    <div class="icon-box teal">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Audience</span>
+                        <span class="link-desc">Subscribers &amp; demographics</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="manage-column">
+            <h6 class="column-header">Community</h6>
+            <div class="menu-group">
+                <a href="/comments" class="menu-link-item">
+                    <div class="icon-box pink">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Comments</span>
+                        <span class="link-desc">Moderate discussions</span>
+                    </div>
+                </a>
+                <a href="/newsletter" class="menu-link-item">
+                    <div class="icon-box indigo">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Newsletter</span>
+                        <span class="link-desc">Email your subscribers</span>
+                    </div>
+                </a>
+                <a href="/polls" class="menu-link-item">
+                    <div class="icon-box cyan">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Reader Polls</span>
+                        <span class="link-desc">Engage with questions</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="manage-column">
+            <h6 class="column-header">Settings</h6>
+            <div class="menu-group">
+                <a href="/profile" class="menu-link-item">
+                    <div class="icon-box slate">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Profile</span>
+                        <span class="link-desc">Edit bio &amp; avatar</span>
+                    </div>
+                </a>
+                <a href="/earnings" class="menu-link-item">
+                    <div class="icon-box gold">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Earnings</span>
+                        <span class="link-desc">Payouts &amp; monetization</span>
+                    </div>
+                </a>
+                <a href="/security" class="menu-link-item">
+                    <div class="icon-box red">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="text-box">
+                        <span class="link-title">Security</span>
+                        <span class="link-desc">Password &amp; 2FA</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/post-content">
+                    <div class="nav_link jobs">
+                        <div class="nav_icon">
+                            <i class="fa-solid fa-pen-to-square" style="font-size: 1.3rem !important"></i>
+                        </div>
+                        <div class="nav_text text-nowrap">Post Content</div>
+                    </div>
+                    </a>
+                </li>
+
+                <li id='notification-box' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div id="bell-notify" class="nav_link">
+                            <div class="nav_icon noti-nav-icon">
+                                <div class="info"></div>
+                                <i class="bi bi-bell-fill" style="font-size: 1.3rem !important"></i>
+                            </div>
+                            <div class="nav_text">Notifications</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li id="categories-box" class="nav-item dropdown mx-2 mega-menu-item">
+                    <a class="nav-link d-flex flex-column align-items-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-grip">
+                            <circle cx="12" cy="5" r="1" />
+                            <circle cx="19" cy="5" r="1" />
+                            <circle cx="5" cy="5" r="1" />
+                            <circle cx="12" cy="12" r="1" />
+                            <circle cx="19" cy="12" r="1" />
+                            <circle cx="5" cy="12" r="1" />
+                            <circle cx="12" cy="19" r="1" />
+                            <circle cx="19" cy="19" r="1" />
+                            <circle cx="5" cy="19" r="1" />
+                        </svg>
+                        <span class="nav-text small">Categories</span>
+                    </a>
+
+                    <div class="mega-menu mega-categories-light">
+    <div class="categories-light-container">
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box blue">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Business <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Strategies for startups &amp; growth.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box gold">
+                <i class="fas fa-landmark"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Finance <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Market trends &amp; economic analysis.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box indigo">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Technology <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Future tech &amp; AI developments.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box teal">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Mental Health <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Wellness &amp; work-life balance.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box green">
+                <i class="fas fa-seedling"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Botany <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Plant sciences &amp; ecology.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box orange">
+                <i class="fas fa-tree"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Arboriculture <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Tree care &amp; urban forestry.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box pink">
+                <i class="fas fa-palette"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Art &amp; Culture <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Design history &amp; creative trends.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box purple">
+                <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Writing <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Storytelling &amp; copywriting tips.</span>
+            </div>
+        </a>
+        <a href="#" class="cat-card-item">
+            <div class="cat-icon-box slate">
+                <i class="fas fa-city"></i>
+            </div>
+            <div class="cat-text-box">
+                <span class="cat-link-title">Urban Planning <i class="fas fa-arrow-right"></i></span>
+                <span class="cat-link-desc">Smart cities &amp; infrastructure.</span>
+            </div>
+        </a>
+    </div>
+</div>
+                </li>
+
+                <li id="profile-box" class="nav-item dropdown">
+                    <div class="header_right_2">
+                        <div class="nav_link cursor-pointer" id="nav_link" data-bs-toggle="dropdown">
+                            <div class="nav_icon cursor-pointer">
+                                <img src="profile/avatar.png" alt="non" style="height: 30px; border-radius: 50px;">
+                                <span class="nav_text">Me <span id="profile-me"></span></span>
+                            </div>
+
+                            <div class="dropdown dropdown-head-linkedin-clone">
+                                <ul 
+                                    id="dropdown" 
+                                    class="profile-dropdown-box dropdown-menu d-mobile shadow border"
+                                    style="display: block; left: -207px; top: 3px; width: 262px;">
+
+                                    <li>
+                                        <a class="dropdown-item2 bg-transparent cursor-default text-black" href="#">
+                                            <div class="profile-dropdown">
+                                                <div class="profile-details d-flex gap-2">
+                                                    <div class="nav_icon">
+                                                        <img src="profile/avatar.png" alt="non" style="height: 30px;object-fit: contain;border-radius: 50px;">
+                                                    </div>
+                                                    <h6 class="mt-2">Sneha Singh</h6>
+                                                </div>
+                                                <p class="text-wrap" style="color: #666;">
+                                                    A passionate storyteller who loves crafting engaging blogs and articles.
+                                                </p>
+                                                <button
+                                                    class="custom-secondary-blue w-100 btn-profile custom-secondary-blue-border semi-rounded fw-semibold bg-white transition-all p-0">
+                                                    <div class="custom-secondary-blue-border-bold bg-light-blue2 rounded w-100 transition-all">Profile</div>
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="dropdown-item  disabled text-black" style="font-weight: 600" href="#">Account</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item2 text-black-75" style="padding: 8px 20px;" href="/my-account">
+                                            <i class="pe-1 fas fa-cog"></i> Settings & Privacy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item2 text-black-75" style="padding: 8px 20px;" href="#">
+                                            <i class="pe-1 fas fa-question-circle"></i> Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item2 text-black-75" style="padding: 8px 20px;" href="/privacy-policy">
+                                            <i class="pe-1 fas fa-user-shield"></i> Privacy and Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item2 text-black-75" style="padding: 8px 20px;" href="/terms-and-conditions">
+                                            <i class="pe-1 fas fa-file-contract"></i> Terms and Conditions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item2  text-black-75" style="padding: 8px 20px;" href="/logout">
+                                            <i class="pe-1 fas fa-sign-out-alt"></i> Logout
+                                        </a>
+                                    </li>
+                                        
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+		
+		<section class="page-header bg-white">
+    <div class="container">
+        <div class="row search__header">
+            <div class="search-container d-flex align-items-center">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search articles, topics, or keywords..."
+                aria-label="Search"/>
+            </div>
+        </div>
+
+        <div class="nav-bar position-absolute mb-0 px-4">
+            <ul class="gap-4 align-items-center d-flex align-items-center list-unstyled text-light mb-0">
+                <li class="nav-item mt-2">
+                    <a
+                    class="nav-link context-selecter px-3 active"
+                    href="/search/articles"
+                    >Articles</a>
+                </li>
+                <li class="nav-item mt-2">
+                    <a
+                    class="nav-link context-selecter px-3"
+                    href="/search/blogs"
+                    style="width: 66.5px"
+                    >Blog</a>
+                </li>
+                <li class="nav-item mt-2">
+                    <a
+                    class="nav-link context-selecter px-3"
+                    href="/search/stories"
+                    style="width: 68.9px"
+                    >Story</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		
+
+		
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<!--
+<script src="/my/js/jquery-3.6.0.min.js"></script>
+<script src="/my/js/bootstrap.bundle.min.js"></script>
+<script src="/my/js/popper.min.js"></script>
+-->
+<script>
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    function GetDate(dat) {
+        var formattedDate = new Date(dat);
+        var d = formattedDate.getDate();
+        var m =  formattedDate.getMonth();
+        m += 1;
+        var y = formattedDate.getFullYear();
+
+        return (months[m-1] + " " + d + ", " + y);
+    }
+
+    function GetDateTime(dat) {
+        var formattedDate = new Date(row.PublishDate);
+        var d = formattedDate.getDate();
+        var m =  formattedDate.getMonth();
+        m += 1;
+        var y = formattedDate.getFullYear();
+
+        return (months[m-1] + " " + d + ", " + y);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+		<script src="navbar.js"></script>
+		
+    </body>
